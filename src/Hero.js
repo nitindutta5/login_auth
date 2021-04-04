@@ -11,6 +11,7 @@ const Hero = (props) =>{
                 </h2>
                 <button onClick={handleLogout}>Logout</button>
             </nav>
+            <h2>You have logged in successfully.</h2>
         </section>
     )
 }

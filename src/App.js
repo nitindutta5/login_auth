@@ -15,7 +15,7 @@ const App = () => {
   const [hasAccount, setHasAccount] = useState('');
 
   const clearInputs = () => {
-    setUser('');
+    setEmail('');
     setPassword('');
   }
 
@@ -68,9 +68,9 @@ const App = () => {
 
   const authListener = () =>{
     fire.auth().onAuthStateChanged(user=>{
-      console.log(user);
+      
       if(user){
-        alert("hi")
+        console.log(user);
         setUser(user);
         clearInputs();
       }
